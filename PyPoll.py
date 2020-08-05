@@ -17,7 +17,7 @@ file_to_save = os.path.join("analysis", "election_analysis.txt")
 total_votes = 0
 
 # Initialize canditate list
-canditate_options = []
+candidate_options = []
 
 # Open the election results and read the file.
 with open(file_to_load) as election_data:
@@ -40,8 +40,11 @@ with open(file_to_load) as election_data:
         # Read the candidate name from each row
         candidate_name = row[2]
 
-       # Add the candidate name to the candidate list
-       canditate_options.append(candidate_name)
+        # Check if candidate is in the candidate list
+        type(candidate_options)
+        if candidate_name not in candidate_options:
+            # Add candidate name to list
+            candidate_options.append(candidate_name)
 
 # Print the candidate list
 print(candidate_options)
