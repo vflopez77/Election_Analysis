@@ -35,6 +35,7 @@ The analysis of the election data shows that:
     - Winning Percentage: 73.8%
 
   ## Analysis of Methodology
+  ### File Processing
 - The data was provided in a flat csv (comma delimited) file.  
 - In order to read and analyze the data, We imported 2 Python modules: <b>os</b> and <b>csv</b>.  
 - The <b>csv</b> module makes reading and writing files possible. 
@@ -51,6 +52,8 @@ file_to_load = os.path.join("Resources", "election_results.csv")
 # Add a variable to save the file to a path.
 file_to_save = os.path.join("analysis", "election_analysis.txt")
 ...
+# Read and skip the header
+    header = next(reader)
 with open(file_to_load) as election_data:
     reader = csv.reader(election_data)
 ...
@@ -59,6 +62,7 @@ with open(file_to_save, "w") as txt_file:
     ...
     txt_file.write(election_results)
 ```
+### Variable Use - Lists and Dictionaries
 
   ## Summary
-The script used for this election is fast and accurate, and can be applied to any type of election.  For a primary election, with a subsequent run-off election, it can easily be modified to find the top <b><i>n</i></b> number of candidates to be enterd in the run-off.  It can also be altered to process election results by district, as well as county and any combination of those.
+The script used for this election is fast and accurate, and can be applied to any type of election.  For a primary election, with a subsequent run-off election, it can easily be modified to find the top <b><i>n</i></b> number of candidates to be enterd in the run-off.  It can also be altered to process election results by Congressional District for House elections.  This solution will answer all of your election data processing needs.
