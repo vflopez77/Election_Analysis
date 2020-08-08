@@ -62,7 +62,53 @@ with open(file_to_save, "w") as txt_file:
     ...
     txt_file.write(election_results)
 ```
-### Variable Use - Lists and Dictionaries
+  ### Variable Use - Lists and Dictionaries
+  - Lists are used to gather the candidate and county names
+  - Dictionaries are used to accumulate the totals for each candidate or county
+```
+# Candidate Options and candidate votes.
+candidate_options = []
+candidate_votes = {}
+
+# Create a county list and county votes dictionary.
+counties = []
+county_votes = {}
+...
+    # For each row in the CSV file.
+    for row in reader:
+
+        # Add to the total vote count
+        total_votes = total_votes + 1
+
+        # Get the candidate name from each row.
+        candidate_name = row[2]
+
+        # Extract the county name from each row.
+        county = row[1]
+        
+        # If the candidate does not match any existing candidate add it to
+        # the candidate list
+        if candidate_name not in candidate_options:
+
+            # Add the candidate name to the candidate list.
+            candidate_options.append(candidate_name)
+
+            # And begin tracking that candidate's voter count.
+            candidate_votes[candidate_name] = 0
+
+        # Add a vote to that candidate's count
+        candidate_votes[candidate_name] += 1
+
+        # Write a decision statement that checks that the
+        # county does not match any existing county in the county list.
+        if county not in counties:
+            # 4b: Add the existing county to the list of counties.
+            counties.append(county)
+            # 4c: Begin tracking the county's vote count.
+            county_votes[county] = 0
+        # 5: Add a vote to that county's vote count.
+        county_votes[county] += 1
+    ```
 
   ## Summary
 The script used for this election is fast and accurate, and can be applied to any type of election.  For a primary election, with a subsequent run-off election, it can easily be modified to find the top <b><i>n</i></b> number of candidates to be enterd in the run-off.  It can also be altered to process election results by Congressional District for House elections.  This solution will answer all of your election data processing needs.
