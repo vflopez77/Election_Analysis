@@ -15,9 +15,15 @@ To this end, we will  analyze and summarize the data in the file and provide the
 - Data source: election_results.csv
 - Software: Python 3.7.6, Visual Studio Code 1.47.3
 
-## Summary
+## Election Results
 The analysis of the election data shows that:
 - There were 369,711 votes cast in the election.
+- The turnout in each county broke down as follows:
+  - Jefferson county had 10.5% or 38,855 votes
+  - Denver county had 82.8% or 306,055 votes
+  - Arapahoe county had 6.7% or 24,801 votes
+ - <b>Denver</b> county had the largest turnout
+ 
 - The candidates were:
   - Charles Casper Stockham
   - Diana DeGette
@@ -29,6 +35,6 @@ The analysis of the election data shows that:
 - The winner of the election was;
   - Diana DeGette who received 73.8% of the vote and 272,892 votes.
 
-  ## Challenge Overview 
+  ## Analysis of Methodology
 
-  ## Challenge Summary
+  ## Summary
