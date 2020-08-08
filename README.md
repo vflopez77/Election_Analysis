@@ -64,8 +64,8 @@ with open(file_to_save, "w") as txt_file:
     txt_file.write(election_results)
 ```
   ### Variable Use - Lists and Dictionaries
-  - Python Lists are used to gather the candidate and county names
-  - Python Dictionaries are used to accumulate the totals for each candidate or county
+  - Python Lists are used to gather the candidate and county names.
+  - Python Dictionaries are used to accumulate the totals for each candidate or county.
 ```
 # Candidate list and candidate votes dictionary.
 candidate_options = []
