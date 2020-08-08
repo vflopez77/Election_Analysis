@@ -1,11 +1,15 @@
 # Election_Analysis
 
 ## Project Overview
-The Election Commission has provided us with a file of the election data and asked us to report the results of the election.  To this end, we will  analyze and summarize the data in the file and provide the following:
+The Election Commission has provided us with a file of the election data, and asked us to report the results of the election.  
+
+To this end, we will  analyze and summarize the data in the file and provide the following:
 
 - The total number of votes cast.
 - A list of all the counties and the percentage and total number of votes cast in each county
 - The name of the county with the largest turnout
+- The percentage and total votes for each candidate
+- The winning candidate and the total votes and percentage cast for them
 
 Given a file with the results of an election, we are to extract and present the summary data, specificaly names of the candidates, the total vote count, the total vote count by candidate, the percentage of votes cast by candidate, and the winner of the election.  We will also generate a list of the total votes and percentage of votes by county, and identify the county with the most votes.
 
