@@ -5,11 +5,11 @@ The Election Commission has provided us with a file of the election data, and as
 
 To this end, we will  analyze and summarize the data in the file and provide the following:
 
-- The total number of votes cast.
-- A list of all the counties and the percentage and total number of votes cast in each county
+- The total number of votes cast
+- A list of all the counties with the percentage and total number of votes cast in each county
 - The name of the county with the largest turnout
 - The percentage and total votes for each candidate
-- The winning candidate and the total votes and percentage cast for them
+- The winning candidate and the total votes and percentage of votes cast for them
 
 ## Resources
 - Data source: election_results.csv
@@ -19,10 +19,11 @@ To this end, we will  analyze and summarize the data in the file and provide the
 The analysis of the election data shows that:
 - There were <b>369,711</b> votes cast in the election.
 - <b>Turnout by County:</b>
-  - Jefferson county had 10.5% or 38,855 votes
-  - Denver county had 82.8% or 306,055 votes
-  - Arapahoe county had 6.7% or 24,801 votes
- - <b>Denver</b> county had the largest turnout
+  - Jefferson county had 10.5% or 38,855 votes.
+  - Denver county had 82.8% or 306,055 votes.
+  - Arapahoe county had 6.7% or 24,801 votes.
+  
+ - <b>Denver</b> county had the largest turnout.
  
   - <b>Candidate Results:</b>
     - Charles Casper Stockham received 23.0% of the vote and 85,213 votes.
@@ -63,8 +64,8 @@ with open(file_to_save, "w") as txt_file:
     txt_file.write(election_results)
 ```
   ### Variable Use - Lists and Dictionaries
-  - Lists are used to gather the candidate and county names
-  - Dictionaries are used to accumulate the totals for each candidate or county
+  - Python Lists are used to gather the candidate and county names
+  - Python Dictionaries are used to accumulate the totals for each candidate or county
 ```
 # Candidate list and candidate votes dictionary.
 candidate_options = []
@@ -111,4 +112,4 @@ county_votes = {}
 ```
 
   ## Summary
-The script used for this election is fast and accurate, and can be applied to any type of election.  For a primary election, with a subsequent run-off election, it can easily be modified to find the top <b><i>n</i></b> number of candidates to be enterd in the run-off.  It can also be altered to process election results by Congressional District for House elections.  This solution will answer all of your election data processing needs.
+The script used for this election is fast and accurate.  It can easlily be adapted to any type of election.  For a primary election, with a subsequent run-off election, it can be modified to find the top <b><i>n</i></b> number of candidates to be enterd in the run-off.  It can also be altered to process election results by Congressional District for House elections.  This solution, with minor adjusments, will answer all of your election data processing needs.
