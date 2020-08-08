@@ -11,15 +11,6 @@ To this end, we will  analyze and summarize the data in the file and provide the
 - The percentage and total votes for each candidate
 - The winning candidate and the total votes and percentage cast for them
 
-Given a file with the results of an election, we are to extract and present the summary data, specificaly names of the candidates, the total vote count, the total vote count by candidate, the percentage of votes cast by candidate, and the winner of the election.  We will also generate a list of the total votes and percentage of votes by county, and identify the county with the most votes.
-
-The steps to this end are:
-1. Calculate the total number of votes cast
-2. Generate a list of the candidates
-3. Extract the total number of votes cast for each candidate
-4. Calculate the percentageo of votes cast for each candidate
-5. Determine the winner of the election
-
 ## Resources
 - Data source: election_results.csv
 - Software: Python 3.7.6, Visual Studio Code 1.47.3
