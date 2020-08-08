@@ -17,8 +17,8 @@ To this end, we will  analyze and summarize the data in the file and provide the
 
 ## Election Results
 The analysis of the election data shows that:
-- There were 369,711 votes cast in the election.
-- The turnout in each county broke down as follows:
+- There were <b>369,711</b> votes cast in the election.
+- <b>Turnout by County:</b>
   - Jefferson county had 10.5% or 38,855 votes
   - Denver county had 82.8% or 306,055 votes
   - Arapahoe county had 6.7% or 24,801 votes
