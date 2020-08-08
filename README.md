@@ -35,13 +35,29 @@ The analysis of the election data shows that:
     - Winning Percentage: 73.8%
 
   ## Analysis of Methodology
-The data was provided in a flat csv (comma delimited) file.  
+The election data was provided in a flat csv (comma delimited) file.  
 In order to read and analyze the data, We imported 2 Python modules: <b>csv</b> and <b>os</b>.  
 The csv module makes reading and writing files possible.  
 The os module facilitates using the local file system.
 
-Here are samples of how we used these modules:
-
-<img src=/Resources/FileHandlingCode.png></img>
+This is how these modules were used:
+```
+# Add our dependencies.
+import csv
+import os
+...
+# Add a variable to load a file from a path.
+file_to_load = os.path.join("Resources", "election_results.csv")
+# Add a variable to save the file to a path.
+file_to_save = os.path.join("analysis", "election_analysis.txt")
+...
+with open(file_to_load) as election_data:
+    reader = csv.reader(election_data)
+...
+# Save the results to our text file.
+with open(file_to_save, "w") as txt_file:
+    ...
+    txt_file.write(election_results)
+```
 
   ## Summary
