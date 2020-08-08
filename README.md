@@ -37,8 +37,8 @@ The analysis of the election data shows that:
   ## Analysis of Methodology
 - The data was provided in a flat csv (comma delimited) file.  
 - In order to read and analyze the data, We imported 2 Python modules: <b>os</b> and <b>csv</b>.  
-- The os module facilitates using the local file system.
-- The csv module makes reading and writing files possible. 
+- The <b>csv</b> module makes reading and writing files possible. 
+- The <b>os</b> module facilitates using the local file system.
 
 This is how we used these modules:
 ```
@@ -59,7 +59,5 @@ with open(file_to_save, "w") as txt_file:
     ...
     txt_file.write(election_results)
 ```
-
-<img src=/Resources/FileHandlingCode.png></img>
 
   ## Summary
