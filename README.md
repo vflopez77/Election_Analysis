@@ -23,7 +23,7 @@ The analysis of the election data shows that:
   - Denver county had 82.8% or 306,055 votes.
   - Arapahoe county had 6.7% or 24,801 votes.
   
- - <b>Denver</b> county had the largest turnout.
+  - <b>Denver</b> county had the largest turnout.
  
   - <b>Candidate Results:</b>
     - Charles Casper Stockham received 23.0% of the vote and 85,213 votes.
@@ -64,8 +64,8 @@ with open(file_to_save, "w") as txt_file:
     txt_file.write(election_results)
 ```
   ### Variable Use - Lists and Dictionaries
-  - Python Lists are used to gather the candidate and county names
-  - Python Dictionaries are used to accumulate the totals for each candidate or county
+  - Python Lists are used to gather the candidate and county names.
+  - Python Dictionaries are used to accumulate the totals for each candidate or county.
 ```
 # Candidate list and candidate votes dictionary.
 candidate_options = []
