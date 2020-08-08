@@ -41,6 +41,24 @@ The os module facilitates using the local file system.
 The csv module makes reading and writing files possible. 
 
 Here are samples of how we used these modules:
+```
+# Add our dependencies.
+import csv
+import os
+...
+# Add a variable to load a file from a path.
+file_to_load = os.path.join("Resources", "election_results.csv")
+# Add a variable to save the file to a path.
+file_to_save = os.path.join("analysis", "election_analysis.txt")
+...
+with open(file_to_load) as election_data:
+    reader = csv.reader(election_data)
+...
+# Save the results to our text file.
+with open(file_to_save, "w") as txt_file:
+    ...
+    txt_file.write(election_results)
+```
 
 <img src=/Resources/FileHandlingCode.png></img>
 
