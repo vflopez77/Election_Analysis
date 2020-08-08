@@ -38,12 +38,8 @@ The analysis of the election data shows that:
 The data was provided in a flat csv (comma delimited) file.  
 In order to read and analyze the data, We imported 2 Python modules: <b>csv</b> and <b>os</b>.  
 The csv module makes reading and writing files possible. 
-Here is an example of how we were able to read the file:
+Here is how we used these modules:
 
-The os module facilitates working with the local file systems.
-# Add a variable to load a file from a path.
-file_to_load = os.path.join("Resources", "election_results.csv")
-# Add a variable to load a file from a path.
-file_to_load = os.path.join("Resources", "election_results.csv")
+<img src=/Resources/FileHandlingCode.png></img>
 
   ## Summary
