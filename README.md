@@ -66,7 +66,7 @@ with open(file_to_save, "w") as txt_file:
   - Lists are used to gather the candidate and county names
   - Dictionaries are used to accumulate the totals for each candidate or county
 ```
-# Candidate Options and candidate votes.
+# Candidate Options and candidate votes dictionary.
 candidate_options = []
 candidate_votes = {}
 
