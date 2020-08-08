@@ -61,3 +61,4 @@ with open(file_to_save, "w") as txt_file:
 ```
 
   ## Summary
+This methodology is fast and accurate and can be applied to any kind of election.
