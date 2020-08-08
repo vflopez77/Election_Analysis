@@ -36,9 +36,11 @@ The analysis of the election data shows that:
 
   ## Analysis of Methodology
 The data was provided in a flat csv (comma delimited) file.  
-In order to read and analyze the data, We imported 2 Python modules: <b>csv</b> and <b>os</b>.  
+In order to read and analyze the data, We imported 2 Python modules: <b>os</b> and <b>csv</b>.  
+The os module facilitates using the local file system.
 The csv module makes reading and writing files possible. 
-Here is how we used these modules:
+
+Here are samples of how we used these modules:
 
 <img src=/Resources/FileHandlingCode.png></img>
 
