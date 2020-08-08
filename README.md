@@ -1,7 +1,7 @@
 # Election_Analysis
 
 ## Project Overview
-Given a file with the results of an election, we are to extract and present the summary data, specificaly names of the candidates, the total vote count, the total vote count by candidate, the percentage of votes cast by candidate, and the winner of the election.
+Given a file with the results of an election, we are to extract and present the summary data, specificaly names of the candidates, the total vote count, the total vote count by candidate, the percentage of votes cast by candidate, and the winner of the election.  We will also generate a list of the total votes and percentage of votes by county, and identify the county with the most votes.
 
 The steps to this end are:
 1. Calculate the total number of votes cast
