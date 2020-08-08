@@ -66,14 +66,31 @@ with open(file_to_save, "w") as txt_file:
   - Lists are used to gather the candidate and county names
   - Dictionaries are used to accumulate the totals for each candidate or county
 ```
-# Candidate Options and candidate votes dictionary.
+# Candidate list and candidate votes dictionary.
 candidate_options = []
 candidate_votes = {}
 
 # Create a county list and county votes dictionary.
 counties = []
 county_votes = {}
-...
+
+# Track the winning candidate, vote count and percentage
+winning_candidate = ""
+winning_count = 0
+winning_percentage = 0
+
+# Track the largest county and county voter turnout.
+largest_county = ""
+largest_county_count = 0
+largest_county_percentage = 0
+
+# Read the csv and convert it into a list of dictionaries
+with open(file_to_load) as election_data:
+    reader = csv.reader(election_data)
+
+    # Read and skip the header
+    header = next(reader)
+
     # For each row in the CSV file.
     for row in reader:
 
@@ -102,13 +119,16 @@ county_votes = {}
         # Write a decision statement that checks that the
         # county does not match any existing county in the county list.
         if county not in counties:
+
             # 4b: Add the existing county to the list of counties.
             counties.append(county)
+
             # 4c: Begin tracking the county's vote count.
             county_votes[county] = 0
+
         # 5: Add a vote to that county's vote count.
         county_votes[county] += 1
-    ```
+```
 
   ## Summary
 The script used for this election is fast and accurate, and can be applied to any type of election.  For a primary election, with a subsequent run-off election, it can easily be modified to find the top <b><i>n</i></b> number of candidates to be enterd in the run-off.  It can also be altered to process election results by Congressional District for House elections.  This solution will answer all of your election data processing needs.
