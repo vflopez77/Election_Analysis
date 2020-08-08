@@ -35,5 +35,11 @@ The analysis of the election data shows that:
     - Winning Percentage: 73.8%
 
   ## Analysis of Methodology
-The data was provided in a flat csv (comma delimited) file.  In order to read and analyze the data, We imported 2 Python modules: <b>csv</b> and <b>os</b>.  The csv module makes reading and writing files possible, and the os module facilitates working with the local file systems.
+The data was provided in a flat csv (comma delimited) file.  
+In order to read and analyze the data, We imported 2 Python modules: <b>csv</b> and <b>os</b>.  
+The csv module makes reading and writing files possible. 
+Here is an example of how we were able to read the file:
+
+The os module facilitates working with the local file systems.
+
   ## Summary
