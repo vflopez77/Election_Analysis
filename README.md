@@ -40,7 +40,7 @@ The analysis of the election data shows that:
 - The <b>csv</b> module makes reading and writing files possible. 
 - The <b>os</b> module facilitates using the local file system.
 
-This is how we used these modules:
+This is how we used these modules to read and write the files:
 ```
 # Add our dependencies.
 import csv
@@ -61,4 +61,4 @@ with open(file_to_save, "w") as txt_file:
 ```
 
   ## Summary
-This methodology is fast and accurate and can be applied to any kind of election.
+The script used for this election is fast and accurate, and can be applied to any type of election.  For a primary election, with a subsequent run-off election, it can easily be modified to find the top <b><i>n</i></b> number of candidates to be enterd in the run-off.  It can also be altered to process election results by district, as well as county and any combination of those.
