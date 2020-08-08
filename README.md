@@ -41,5 +41,7 @@ The csv module makes reading and writing files possible.
 Here is an example of how we were able to read the file:
 
 The os module facilitates working with the local file systems.
+# Add a variable to load a file from a path.
+file_to_load = os.path.join("Resources", "election_results.csv")
 
   ## Summary
