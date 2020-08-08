@@ -24,14 +24,11 @@ The analysis of the election data shows that:
   - Arapahoe county had 6.7% or 24,801 votes
  - <b>Denver</b> county had the largest turnout
  
-- The candidates were:
-  - Charles Casper Stockham
-  - Diana DeGette
-  - Raymon Anthony Doane
- - Candidate results were:
+ - The candidate results were:
     - Charles Casper Stockham received 23.0% of the vote and 85,213 votes.
     - Diana DeGette received 73.8% of the vote and 272,892 votes.
     - Raymon Anthony Doane received 3.1% of the vote and 11,606 votes.
+    
 - The winner of the election was;
   - Diana DeGette who received 73.8% of the vote and 272,892 votes.
 
